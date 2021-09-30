@@ -1,11 +1,12 @@
 import React from "react";
 import { Navbar, Nav, Form, FormControl, Button ,NavDropdown} from "react-bootstrap"
+import { Fonts } from "react-bootstrap-icons";
 
 
 export default function MyNav() {  
       return (
         <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">Art-Express</Navbar.Brand>
+  <Navbar.Brand href="#home" style={{ color: 'blue' }}>Art-Express</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">

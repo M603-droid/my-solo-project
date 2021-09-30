@@ -5,7 +5,7 @@ export default function MyJumbotron() {
 
         <Jumbotron>
   <Container>
-    <h1>Art-Express</h1>
+    <h1 style={{ color: 'blue' }}>Art-Express</h1>
     <p>
       Welcome to Art-Express
     </p>
