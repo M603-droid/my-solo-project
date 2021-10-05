@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './components/Navbar'
 import MyJumbotron from './components/MyJumbotron';
-import PageDetails from './components/PageDetails'
+import PageDetails from './components/PageDetails';
+import MyFooter from './components/MyFooter';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
      <Navbar/>
      <MyJumbotron/>
      <PageDetails/>
+     <MyFooter/>
 
     </div>
   );

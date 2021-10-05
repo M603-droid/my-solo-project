@@ -1,11 +1,13 @@
 import React from "react";
 import { Jumbotron , Container} from "react-bootstrap";
+import './MyJumbotron.css';
+
 export default function MyJumbotron() {  
     return (
 
-        <Jumbotron>
-  <Container>
-    <h1 style={{ color: 'blue' }}>Art-Express</h1>
+        <Jumbotron >
+  <Container fluid style={{ backgroundColor: 'rgb(194, 159, 139)'  }}>
+    <h1 style={{ color: 'blue'  }}>Art-Express</h1>
     <p>
       Welcome to Art-Express
     </p>

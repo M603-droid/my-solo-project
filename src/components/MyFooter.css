@@ -1,0 +1,18 @@
+.Footer {
+  font-size: medium;
+  color: black;
+}
+
+.copyright {
+  margin-left: 0px;
+  background-color: rgb(48, 48, 117);
+  color: gray;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#footerFontSize {
+  font-size: medium;
+}

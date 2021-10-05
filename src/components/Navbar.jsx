@@ -1,6 +1,12 @@
 import React from "react";
 import { Navbar, Nav, Form, FormControl, Button ,NavDropdown} from "react-bootstrap"
 import { Fonts } from "react-bootstrap-icons";
+import { BsCartFill } from "react-icons/bs";
+import { BsPersonFill } from "react-icons/bs";
+import { BsFillSuitHeartFill } from "react-icons/bs";
+
+
+
 
 
 export default function MyNav() {  
@@ -8,7 +14,7 @@ export default function MyNav() {
         <Navbar bg="light" expand="lg">
   <Navbar.Brand href="#home" style={{ color: 'blue' }}>Art-Express</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
+  <Navbar.Collapse>
     <Nav className="mr-auto">
     <Form inline >
       <FormControl type="text" placeholder="Search for anything" className="rounded"  />
@@ -17,10 +23,10 @@ export default function MyNav() {
 
     </Nav>
     <Nav>
-    <Nav.Link href="#deets">Favorites</Nav.Link>
-      <Nav.Link href="#deets">User</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Cart
+    <Nav.Link href="#"><BsFillSuitHeartFill/></Nav.Link>
+      <Nav.Link href="#"><BsPersonFill/></Nav.Link>
+      <Nav.Link >
+     < BsCartFill/>
       </Nav.Link>
     </Nav>
     
