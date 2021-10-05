@@ -6,7 +6,7 @@ export default function MyJumbotron() {
     return (
 
         <Jumbotron >
-  <Container fluid style={{ backgroundColor: 'rgb(194, 159, 139)'  }}>
+  <Container fluid>
     <h1 style={{ color: 'blue'  }}>Art-Express</h1>
     <p>
       Welcome to Art-Express

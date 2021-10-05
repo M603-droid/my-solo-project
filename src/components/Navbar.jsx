@@ -18,7 +18,7 @@ export default function MyNav() {
     <Nav className="mr-auto">
     <Form inline >
       <FormControl type="text" placeholder="Search for anything" className="rounded"  />
-      <Button variant="outline-success" className="rounded">Search</Button>
+      <Button variant="outline-info" className="rounded">Search</Button>
     </Form>
 
     </Nav>
