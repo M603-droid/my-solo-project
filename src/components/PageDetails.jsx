@@ -34,7 +34,7 @@ class Home extends Component {
             return (
               <Col sm="2">
                 <Card>
-                  <Card.Img variant="top"  width = "50px" height = "200px" />
+                  <Card.Img variant="top" src={artwork.thumbnail.lqip} width = "50px" height = "200px" />
                   <Card.Body>
                     <Card.Title>{artwork.title}</Card.Title>
                     <Card.Text>{artwork.alt_text}</Card.Text>
