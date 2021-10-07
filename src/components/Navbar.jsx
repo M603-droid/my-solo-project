@@ -5,6 +5,7 @@ import { BsCartFill } from "react-icons/bs";
 import { BsPersonFill } from "react-icons/bs";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import  ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
 
 
@@ -14,7 +15,9 @@ import { Link } from "react-router-dom";
 export default function MyNav() {  
       return (
         <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home" style={{ color: 'blue' }}>Art-Express</Navbar.Brand>
+            <Navbar.Brand> <img src="https://www.kellerisd.net/cms/lib/TX02215599/Centricity/Domain/3267/Images/Art%20Express2.png" alt="logo"  height = "60px" width ="100px"/></Navbar.Brand>
+
+
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse>
     <Nav className="mr-auto">
@@ -24,11 +27,13 @@ export default function MyNav() {
     </Form>
     </Nav>
     <Nav>
-    <Nav.Link href="#"><BsFillSuitHeartFill/></Nav.Link>
+    <Nav.Link href="#"><BsFillSuitHeartFill/> </Nav.Link>
       <Nav.Link href="#"><BsPersonFill/></Nav.Link>
-      <Nav.Link >
-     < BsCartFill/>
-      </Nav.Link>
+      <Link to ="/checkout" className ="checkout_basket">
+        <div className="cart_icon">
+          <ShoppingBasketIcon/>
+        </div>
+      </Link>
     </Nav>
     
   </Navbar.Collapse>

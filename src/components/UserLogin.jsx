@@ -1,10 +1,15 @@
 import React from "react";
-import { Form , FormControl} from "react-bootstrap";
+import { Form ,  Button} from "react-bootstrap";
 
 export default function User() { 
 
     return(
-        <Form>
+        
+        
+        <div className = "submit-form d-flex justify-content-center "  style={{ border: '2px solid black' }}>
+
+            
+             <Form>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -20,9 +25,12 @@ export default function User() {
         <Form.Group controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="success" type="submit">
           Submit
         </Button>
       </Form>
+    
+        </div>
+       
     )
  }
