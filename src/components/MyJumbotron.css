@@ -1,3 +1,7 @@
 .myjumbo {
-  background-color: rgb(139, 139, 54);
+  background-color: rgb(194, 159, 139);
+}
+.jumbotext {
+  font-family: cursive;
+  color: blue;
 }

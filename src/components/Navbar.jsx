@@ -4,6 +4,8 @@ import { Fonts } from "react-bootstrap-icons";
 import { BsCartFill } from "react-icons/bs";
 import { BsPersonFill } from "react-icons/bs";
 import { BsFillSuitHeartFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -20,8 +22,6 @@ export default function MyNav() {
       <FormControl type="text" placeholder="Search for anything" className="rounded"  />
       <Button variant="outline-info" className="rounded">Search</Button>
     </Form>
-    <img src="../logo.png" alt="logo" height="50px" width="40px" />
-
     </Nav>
     <Nav>
     <Nav.Link href="#"><BsFillSuitHeartFill/></Nav.Link>

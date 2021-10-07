@@ -1,6 +1,8 @@
 import React from "react";
 import { Component } from "react";
 import { Row, Col, Card, Button } from "react-bootstrap";
+import './PageDetails.css'
+
 
 class Home extends Component {
   state = {
@@ -28,22 +30,27 @@ class Home extends Component {
   };
   render() {
     return (
-      <Row>
+      <div>
+        <h5>Find some of our best products</h5>
+        <Row>
+        
         {this.state.artworks.length > 0 &&
           this.state.artworks.map((artwork) => {
             return (
-              <Col sm="2">
+              <Col sm="3" className = "mb-4 mycards">
                 <Card>
-                  <Card.Img variant="top" src={artwork.thumbnail.lqip} width = "50px" height = "200px" />
+                  <Card.Img variant="top" src={artwork.thumbnail.lqip} width = "50px" height = "300px" />
                   <Card.Body>
                     <Card.Title>{artwork.title}</Card.Title>
-                    <Card.Text>{artwork.alt_text}</Card.Text>
                   </Card.Body>
+                  <Button variant="success">Add to cart</Button>
                 </Card>
               </Col>
             );
           })}
       </Row>
+      </div>
+      
     );
   }
 }
