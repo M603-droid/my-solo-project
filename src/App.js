@@ -8,7 +8,7 @@ import MyFooter from './components/MyFooter';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import UserLogin from './components/UserLogin';
 import CheckOut from './components/CheckOut';
-import HomePage from './Home/HomePage';
+import HomePage from './components/Home/HomePage';
 
 
 
