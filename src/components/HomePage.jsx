@@ -1,7 +1,7 @@
-import MyFooter from "../MyFooter"
-import MyJumbotron from "../MyJumbotron"
-import Navbar from "../Navbar"
-import PageDetails from "../PageDetails"
+import MyFooter from './MyFooter'
+import MyJumbotron from './MyJumbotron'
+import Navbar from './Navbar'
+import PageDetails from './PageDetails'
 import {Row , Col} from "react-bootstrap"
 
 
