@@ -7,7 +7,7 @@ export default function MyJumbotron() {
 
         <Jumbotron >
   <Container fluid>
-    <h1 style={{ color: 'red'  }}>Art-Express</h1>
+    <h1 >Art-Express</h1>
     <p className ="jumbotext">
 Making life colorful    </p>
     <img src="https://dbdzm869oupei.cloudfront.net/img/quadres/large/41588.jpg" height="80px" width="80px" alt="something" className="roundedCircle mt-5 mr-5 ml-5 mb-0"></img>
