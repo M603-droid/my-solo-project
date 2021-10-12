@@ -6,6 +6,7 @@ import { BsPersonFill } from "react-icons/bs";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import  ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import CartIcon from '../components/CartIcon'
 
 
 
@@ -14,7 +15,8 @@ import  ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
 export default function MyNav() {  
       return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" className="sticky-top"
+        >
             <Navbar.Brand> <img src="https://www.kellerisd.net/cms/lib/TX02215599/Centricity/Domain/3267/Images/Art%20Express2.png" alt="logo"  height = "60px" width ="100px"/></Navbar.Brand>
 
 
@@ -38,6 +40,7 @@ export default function MyNav() {
       <Link to ="/checkout" className ="checkout_basket">
         <div className="cart_icon mt-1">
           <ShoppingBasketIcon/>
+          <CartIcon />
         </div>
       </Link>
 

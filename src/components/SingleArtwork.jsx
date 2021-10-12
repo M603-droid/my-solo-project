@@ -13,7 +13,7 @@ class SingleBook extends Component {
                     <div>
 
                         <Card
-                            key={this.props.data.id}
+                            key={this.artwork.Title}
                             className='mt-5 m-3'
                             onClick={() => { this.setState({ selected: !this.state.selected }) }}
                             style={{ width: '18rem', border: this.state.selected ? '3px solid green' : 'none' }}
