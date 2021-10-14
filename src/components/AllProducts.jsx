@@ -1,9 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchAllArtworks, addToCart } from '../actions/index'
-import { Card, Col, Row, Button } from 'react-bootstrap'
+import { Card, Col, Row, Button } from  'react-bootstrap'
+import {addProductToFavorite} from '../actions'
+import { useParams } from "react-router-dom";
+import { connect } from 'react-redux'
 
-const AllProducts = () => {
+
+
+const mapStateToProps = (state) => ({
+    favorites: state.favorites.favorite_products,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+    productToFavorite: (product) => dispatch(addProductToFavorite(product)),
+});
+
+const AllProducts = ({productToFavorite }) => {
+    const params = useParams();
+    const [favoritesArray, setfavoritesArray] = useState([]);
+
 
     const dispatch = useDispatch()
     const allProducts = useSelector(state => state.products.all_products)
@@ -29,6 +45,10 @@ const AllProducts = () => {
 
                                     <button onClick={() => dispatch(addToCart(artwork))}>Add to Cart</button>
                                     <span>price {artwork.internal_department_id} $</span>
+                                    <button
+                      className="removefavtrackbtn button-light ml-3" 
+                      onClick={() => productToFavorite(artwork)}> Add to fav</button>
+                    
                                 </Card>
                             </Col>
                         );
@@ -38,4 +58,8 @@ const AllProducts = () => {
     )
 }
 
-export default AllProducts
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(AllProducts);
+  

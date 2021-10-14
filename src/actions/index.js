@@ -27,7 +27,17 @@ export const removeFromCart = (id) => {
     return (dispatch) => {
         dispatch({
             type: 'REMOVE_FROM_CART',
-            payload: id
+            payload: id,
         })
     }
 }
+
+export const addProductToFavorite = (productToFavorite) => ({
+    type: "ADD_PRODUCT_TO_FAVORITE",
+    payload: productToFavorite,
+  });
+  
+  export const removeProductFromFavorite = (productFromFavorite) => ({
+    type: "REMOVE_PRODUCT_FROM_FAVORITE",
+    payload: productFromFavorite,
+  });
