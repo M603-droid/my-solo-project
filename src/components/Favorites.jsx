@@ -31,8 +31,7 @@ const Favorites = ({ favorites, productFromFavorite }) => {
               <Card key={i}>
                     <Card.Img
                   variant="top"
-                 src="https://c4.wallpaperflare.com/wallpaper/837/935/755/foggy-huawei-mate-10-morning-mountains-wallpaper-preview.jpg" height= "100px" width="50px"
-                  
+                  src={favorite.thumbnail.lqip} width="50px" height="300px"                  
           />
           <Card.Title> {favorite.artist_title}</Card.Title>
           <Card.Text>
