@@ -4,7 +4,9 @@ import { fetchAllArtworks, addToCart } from '../actions/index'
 import { Card, Col, Row, Button , Container} from  'react-bootstrap'
 import {addProductToFavorite} from '../actions'
 import { useParams } from "react-router-dom";
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import './AllProducts.css';
+
 
 
 
