@@ -19,6 +19,7 @@ export const initialState = {
     favorite_products:[],
     error: false
   },
+  
 
   
 };
@@ -36,6 +37,7 @@ const persistConfig = {
 const allReducers = combineReducers({
   products: productsReducer,
   favorites: favoriteReducer,
+  
 });
 
 const persistAllReducers = persistReducer(persistConfig, allReducers);

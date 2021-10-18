@@ -1,5 +1,6 @@
 import React from "react";
 import { Form ,  Button} from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function User() { 
 
@@ -25,9 +26,12 @@ export default function User() {
         <Form.Group controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
+        <Link className="text-white ml-auto" to="/home">
+
         <Button variant="success" type="submit">
           Submit
         </Button>
+        </Link>
       </Form>
     
         </div>

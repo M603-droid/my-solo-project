@@ -8,3 +8,17 @@
   white-space: nowrap;
   overflow: hidden;
 }
+.removefavtrackbtn {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  margin-left: 6rem !important;
+}
+.addcart_button {
+  margin-left: 1.2rem !important;
+  background-color: rgb(8, 66, 8) !important;
+  color: white;
+  border-color: transparent !important;
+}
+.card_image {
+  padding: 2rem !important;
+}
