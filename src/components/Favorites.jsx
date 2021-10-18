@@ -31,9 +31,9 @@ const Favorites = ({ favorites, productFromFavorite }) => {
               <Card key={i}>
                     <Card.Img
                   variant="top"
-                  src={favorite.thumbnail.lqip} width="50px" height="300px"                  
+                  src={favorite.image} width="50px" height="300px"                  
           />
-          <Card.Title> {favorite.artist_title}</Card.Title>
+          <Card.Title> {favorite.title}</Card.Title>
           <Card.Text>
       Some quick example text to build on the card title and make up the bulk of
       the card's content.

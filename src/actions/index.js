@@ -2,9 +2,9 @@ import axios from 'axios'
 
 export const fetchAllArtworks = () => {
     return async (dispatch) => {
-        const allArtworks = await axios.get("https://api.artic.edu/api/v1/artworks")
+        const allArtworks = await axios.get("https://fakestoreapi.com/products")
         console.log(allArtworks)
-        const result = allArtworks.data.data
+        const result = allArtworks.data
 
         dispatch({
             type: 'FETCH_ALL_ARTWORKS',

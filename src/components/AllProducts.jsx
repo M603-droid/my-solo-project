@@ -42,10 +42,10 @@ const AllProducts = ({productToFavorite }) => {
         return (
             <Col sm="3" className="mb-4 mycards">
                 <Card >
-                    <Card.Img variant="top" src={artwork.thumbnail.lqip} width="50px" height="300px" />
+                    <Card.Img variant="top" src={artwork.image} width="50px" height="300px" />
                     <Card.Body>
-                        <Card.Title className="card-title">{artwork.artist_title}</Card.Title>
-                        <span>price {artwork.internal_department_id} $</span>
+                        <Card.Title className="card-title">{artwork.title}</Card.Title>
+                        <span>price {artwork.price} $</span>
                     </Card.Body>
                     <div>
                     <button onClick={() => dispatch(addToCart(artwork))} className="mr-3 ml-0 mb-3">Add to Cart</button>

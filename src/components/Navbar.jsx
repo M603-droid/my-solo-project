@@ -18,7 +18,7 @@ export default function MyNav() {
       return (
         <Navbar bg="light" expand="lg" className="sticky-top"
         >
-            <Navbar.Brand> <img src="https://www.kellerisd.net/cms/lib/TX02215599/Centricity/Domain/3267/Images/Art%20Express2.png" alt="logo"  height = "60px" width ="100px"/></Navbar.Brand>
+            <Navbar.Brand className="title_navbar">Quick-Buy</Navbar.Brand>
 
 
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
