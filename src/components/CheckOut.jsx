@@ -53,7 +53,7 @@ const Checkout = () => {
                 <span>
                   <BsDashCircle className="mr-2 ml-4" />
                   <button onClick={() => dispatch(increment(cartI))}>
-                    Quantity
+                    1
                   </button>{" "}
                   <BsPlusCircle className="mr-2 ml-2" />
                 </span>
