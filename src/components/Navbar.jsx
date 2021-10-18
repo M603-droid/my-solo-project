@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import  ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import CartIcon from '../components/CartIcon'
 import Favorites from "./Favorites";
+import './Navbar.css'
+
 
 
 
@@ -29,7 +31,7 @@ export default function MyNav() {
       <Button variant="outline-info" className="rounded">Search</Button>
     </Form>
     </Nav>
-    <div>
+    <div className="user_cart_fav">
 
     <Nav>
      
@@ -44,8 +46,8 @@ export default function MyNav() {
  </svg> </Link>
        <Link to ="/checkout" className ="checkout_basket ">
          <div className="cart_icon mt-1 mr-2">
-           <ShoppingBasketIcon/>
-           <CartIcon />
+           <ShoppingBasketIcon/> <CartIcon />
+           
          </div>
        </Link>
  

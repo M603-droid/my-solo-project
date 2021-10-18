@@ -1,0 +1,14 @@
+.title_navbar {
+  color: black;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.favorites-add,
+.user_icon,
+.checkout_basket {
+  text-decoration: none;
+  color: black;
+}
+.search {
+  width: 60rem !important;
+}

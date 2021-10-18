@@ -41,3 +41,18 @@ export const addProductToFavorite = (productToFavorite) => ({
     type: "REMOVE_PRODUCT_FROM_FAVORITE",
     payload: productFromFavorite,
   });
+
+   // increment the item
+   export  const increment = (id) =>( {
+    type: "INCREMENT",
+    payload: id,
+    
+  });
+
+
+// decrement the item
+export  const decrement = (id) => ({
+    type: "DECREMENT",
+    payload: id,
+  });
+
