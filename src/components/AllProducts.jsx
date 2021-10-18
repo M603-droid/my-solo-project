@@ -45,7 +45,8 @@ const AllProducts = ({productToFavorite }) => {
                     <Card.Img variant="top" src={artwork.image} width="50px" height="300px" />
                     <Card.Body>
                         <Card.Title className="card-title">{artwork.title}</Card.Title>
-                        <span>price {artwork.price} $</span>
+                        <span className="ml-0 mr-4">price {artwork.price} $</span>
+                        <span className="mr-0">Rating {artwork.rating.rate} </span>
                     </Card.Body>
                     <div>
                     <button onClick={() => dispatch(addToCart(artwork))} className="mr-3 ml-0 mb-3">Add to Cart</button>

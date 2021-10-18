@@ -39,7 +39,7 @@ const Checkout = () => {
               <div className="flex flex-col">
                 <span className="justify-content-center">
                   <img
-                    className="mb-4 mr-3"
+                    className="mb-4 mr-3 "
                     src={cartI.image}
                     height="50px"
                     width="50px"
