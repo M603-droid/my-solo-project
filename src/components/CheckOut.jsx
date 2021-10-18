@@ -86,7 +86,7 @@ const Checkout = () => {
         <div className="checkout_left">
           <div>
             <h2 className="checkout_title"> Your shopping cart is empty</h2>
-            <p>you have no item sin your basket</p>
+            <p>you have no items in your basket</p>
           </div>
         </div>
       )}

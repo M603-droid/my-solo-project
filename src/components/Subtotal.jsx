@@ -4,7 +4,7 @@ function Subtotal (){
     return(
         <div className="subtotal">
 
-            <button>click here to checkout</button>
+            <button >click here to checkout</button>
         </div>
     )
 }

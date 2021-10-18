@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Form, FormControl, Button ,NavDropdown} from "react-bootstrap"
+import { Navbar, Nav, Form, FormControl, Button ,Badge} from "react-bootstrap"
 import { Fonts } from "react-bootstrap-icons";
 import { BsCartFill } from "react-icons/bs";
 import { BsPersonFill } from "react-icons/bs";
@@ -46,7 +46,7 @@ export default function MyNav() {
  </svg> </Link>
        <Link to ="/checkout" className ="checkout_basket ">
          <div className="cart_icon mt-1 mr-2">
-           <ShoppingBasketIcon/> <CartIcon />
+           <ShoppingBasketIcon/><Badge variant="danger"><CartIcon /></Badge>
            
          </div>
        </Link>

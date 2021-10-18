@@ -40,7 +40,7 @@ const AllProducts = ({productToFavorite }) => {
 {
     allProducts.map((artwork, i) => {
         return (
-            <Col sm="3" className="mb-4 mycards">
+            <Col sm="3"  className="mb-4 mycards">
                 <Card >
                     <Card.Img variant="top" src={artwork.image} width="50px" height="300px" />
                     <Card.Body>
