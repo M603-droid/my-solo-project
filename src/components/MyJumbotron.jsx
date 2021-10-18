@@ -5,7 +5,7 @@ import './MyJumbotron.css';
 export default function MyJumbotron() {  
     return (
 
-        <Jumbotron >
+        <Jumbotron className="myjumbo">
   <Container fluid>
     <h1 >Quick-buy</h1>
     <p className ="jumbotext">

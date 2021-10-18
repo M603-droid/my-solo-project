@@ -13,7 +13,7 @@ export default function MyFooter(){
                   <a className= "text-muted" href="#home"><h5>Shop</h5></a>
                 </li>
                 <li>
-                  <a className= "text-muted" href="#home">Gift Cars</a>
+                  <a className= "text-muted" href="#home">Gift Cards</a>
                 </li>
                 <li>
                   <a className= "text-muted" href="#home">Art works  </a>
