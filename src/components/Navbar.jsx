@@ -26,14 +26,15 @@ export default function MyNav() {
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse>
     <Nav className="mr-auto">
-    <Form inline  >
-      <FormControl type="text" placeholder="Search for anything" className="rounded search"  />
-      <Button variant="outline-info" className="rounded">Search</Button>
-    </Form>
+    
     </Nav>
     <div className="user_cart_fav d-flex flex-row">
 
     <Nav>
+<Form inline  >
+      <FormControl type="text" placeholder="Search for anything" className="rounded search"  />
+      <Button variant="outline-info" className="rounded mr-4">Search</Button>
+    </Form>
      
      <Link to ="/favorites" className ="favorites-add mt-1 shopping_basket">
        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">

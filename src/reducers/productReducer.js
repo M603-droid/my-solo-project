@@ -13,7 +13,7 @@ export const productsReducer = (state = initialState.products, action) => {
         case 'ADD_TO_CART':
             return {
                 ...state,
-                cart: [...state.cart, action.payload],
+                cart: [...state.cart, {product:action.payload,count:0}],
             }
 
         case 'REMOVE_FROM_CART':

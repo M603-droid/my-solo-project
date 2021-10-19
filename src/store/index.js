@@ -8,8 +8,7 @@ import favoriteReducer from "../reducers/favoriteReducer";
 import quantityReducer from "../reducers/quantityReducer";
 
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
+const composeEnhancers = window.REDUX_DEVTOOLS_EXTENSION_COMPOSE;
 export const initialState = {
   products: {
     all_products: [],
@@ -49,13 +48,12 @@ const persistAllReducers = persistReducer(persistConfig, allReducers);
 
 export const store = createStore(
   persistAllReducers,
-  //initialState,
-  composeEnhancers(applyMiddleware(thunk))
-  /*
+  initialState,
+  
   process.env.REACT_APP_DEVELOPMENT
     ? composeEnhancers(applyMiddleware(thunk))
     : compose(applyMiddleware(thunk))
-    */
+    
 );
 
 export const persistor = persistStore(store);

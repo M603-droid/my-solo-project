@@ -6,7 +6,6 @@ import { removeFromCart, increment, decrement } from "../actions/";
 import { Card, Col, Row, Button, Container , ListGroup, ListGroupItem} from "react-bootstrap";
 import { BsPlusCircle } from "react-icons/bs";
 import { BsDashCircle } from "react-icons/bs";
-import { counter } from "@fortawesome/fontawesome-svg-core";
 const Checkout = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.products.cart);
@@ -16,7 +15,7 @@ const Checkout = () => {
   const totalItems =
     cartItems.length > 0
       ? cartItems
-          ?.map((carti) => carti.price)
+          ?.map((carti) => carti.product.price)
           .reduce((totalItems, item) => totalItems + item)
       : cartItems.length;
   // totalItems
@@ -46,12 +45,12 @@ const Checkout = () => {
                 <span className="justify-content-center">
                   <img
                     className="mb-4 mr-3 "
-                    src={cartI.image}
+                    src={cartI.product.image}
                     height="50px"
                     width="50px"
                   />
                 </span>
-                <span className="cart_price">{cartI.price}</span>
+                <span className="cart_price">{cartI.product.price}</span>
                 <span>
                   <BsDashCircle className="mr-2 ml-4" onClick={() => dispatch(decrement(cartI))} />
                   <button>
