@@ -5,14 +5,17 @@ import { persistStore, persistReducer } from "redux-persist";
 import { encryptTransform } from "redux-persist-transform-encrypt";
 import storage from "redux-persist/lib/storage";
 import favoriteReducer from "../reducers/favoriteReducer";
+import quantityReducer from "../reducers/quantityReducer";
 
 
-const composeEnhancers = window.REDUX_DEVTOOLS_EXTENSION_COMPOSE;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 export const initialState = {
   products: {
     all_products: [],
-    cart: [],
+    cart: [
+
+    ],
     cartIcons: [],
   },
   favorites:{
@@ -20,8 +23,9 @@ export const initialState = {
     error: false
   },
   
-
-  
+  quantity: {
+    count: 0 
+  }
 };
 
 const persistConfig = {
@@ -37,6 +41,7 @@ const persistConfig = {
 const allReducers = combineReducers({
   products: productsReducer,
   favorites: favoriteReducer,
+  quantity: quantityReducer,
   
 });
 
@@ -44,10 +49,13 @@ const persistAllReducers = persistReducer(persistConfig, allReducers);
 
 export const store = createStore(
   persistAllReducers,
-  initialState,
+  //initialState,
+  composeEnhancers(applyMiddleware(thunk))
+  /*
   process.env.REACT_APP_DEVELOPMENT
     ? composeEnhancers(applyMiddleware(thunk))
     : compose(applyMiddleware(thunk))
+    */
 );
 
 export const persistor = persistStore(store);

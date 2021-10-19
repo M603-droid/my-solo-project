@@ -1,6 +1,6 @@
 import { initialState } from "../store";
 
-const favoriteReducer = (state = initialState, action) => {
+const favoriteReducer = (state = initialState.favorites, action) => {
   switch (action.type) {
     case "ADD_PRODUCT_TO_FAVORITE":
       return {

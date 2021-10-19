@@ -2,13 +2,15 @@ import React from "react";
 import Subtotal from "./Subtotal";
 import "./Checkout.css";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart, increment } from "../actions/";
+import { removeFromCart, increment, decrement } from "../actions/";
 import { Card, Col, Row, Button, Container , ListGroup, ListGroupItem} from "react-bootstrap";
 import { BsPlusCircle } from "react-icons/bs";
 import { BsDashCircle } from "react-icons/bs";
+import { counter } from "@fortawesome/fontawesome-svg-core";
 const Checkout = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.products.cart);
+  const count = useSelector(state=>state.quantity.count);
   console.log(cartItems);
 
   const totalItems =
@@ -51,11 +53,11 @@ const Checkout = () => {
                 </span>
                 <span className="cart_price">{cartI.price}</span>
                 <span>
-                  <BsDashCircle className="mr-2 ml-4" />
-                  <button onClick={() => dispatch(increment(cartI))}>
-                    1
+                  <BsDashCircle className="mr-2 ml-4" onClick={() => dispatch(decrement(cartI))} />
+                  <button>
+                    {count}
                   </button>{" "}
-                  <BsPlusCircle className="mr-2 ml-2" />
+                  <BsPlusCircle className="mr-2 ml-2" onClick={() => dispatch(increment(cartI))}/>
                 </span>
 
                 <button
