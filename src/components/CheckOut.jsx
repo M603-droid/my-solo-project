@@ -19,7 +19,7 @@ const Checkout = () => {
           .reduce((totalItems, item) => totalItems + item)
       : cartItems.length;
   // totalItems
-  console.log(totalItems);
+  console.log(totalItems)
   return (
       
       
@@ -50,7 +50,7 @@ const Checkout = () => {
                     width="50px"
                   />
                 </span>
-                <span className="cart_price">{cartI.product.price}</span>
+                <span className="cart_price">{cartI.product.price} $</span>
                 <span>
                   <BsDashCircle className="mr-2 ml-4" onClick={() => dispatch(decrement(cartI))} />
                   <button>
@@ -84,10 +84,10 @@ const Checkout = () => {
         </Col>
       </Row>
 
-      <span>Total: ${totalItems}</span>
+      <span className="mb-4">Total: ${totalItems}</span>
       {cartItems.length > 0 && (
-        <div className="checkout_right">
-          <Subtotal />
+        <div className="checkout_right mt-3">
+          <Subtotal price={totalItems} />
         </div>
       )}
 

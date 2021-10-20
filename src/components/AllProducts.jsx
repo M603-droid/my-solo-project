@@ -45,7 +45,8 @@ const AllProducts = ({productToFavorite }) => {
                     <Card.Img className="card_image" variant="top" src={artwork.image} width="50px" height="300px" />
                     <Card.Body className="mr-auto">
                         <Card.Title className="card-title">{artwork.title}</Card.Title>
-                        <span className="ml-auto mr-4 ">price {artwork.price} $</span>
+                        <span className="ml-auto mr-4 ">price { artwork.price.toFixed(2)
+} $</span>
                         <span className="mr-0">Rating {artwork.rating.rate} </span>
                     </Card.Body>
                     <div className="mr-auto">

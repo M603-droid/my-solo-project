@@ -15,3 +15,7 @@
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
 }
+.order_button {
+  background-color: transparent;
+  border-color: transparent;
+}

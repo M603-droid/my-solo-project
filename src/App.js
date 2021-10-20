@@ -9,6 +9,7 @@ import UserLogin from './components/UserLogin';
 import CheckOut from './components/CheckOut';
 import HomePage from './components/Home/HomePage';
 import Favorites from './components/Favorites';
+import Thankyou from './components/Thankyou';
 
 
 
@@ -23,6 +24,8 @@ function App() {
       <Route path="/User" exact component ={UserLogin} />
       <Route path="/home" exact component ={HomePage}/>
       <Route path="/favorites" exact component ={Favorites}/>
+      <Route path="/orders" exact component ={Thankyou}/>
+
 
 
 
