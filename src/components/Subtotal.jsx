@@ -19,10 +19,13 @@ function Subtotal({price}) {
         
         stripeKey="pk_test_51Jlv7iBjeK3TTnbWVjuyFGzl6iygS380HfaAUpx577omHjF6DQUmJTIg6RBaGpyqCSVH8E0LebcdV3S4JrIyIsw800E7Mdh3Nd"
       />
+      <div>
       <Link to="orders">
           
-      <button className="order_button"></button>
-      </Link>
+          <button className="order_button">Order Completed</button>
+          </Link>
+      </div>
+      
     </div>
   );
 }
